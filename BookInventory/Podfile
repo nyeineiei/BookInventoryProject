@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'BookInventory' do
+use_frameworks!
+
+pod 'RealmSwift'
+pod 'AlamofireObjectMapper', '~> 5.0'
+pod 'Alamofire', '~> 4.7'
+
+end
