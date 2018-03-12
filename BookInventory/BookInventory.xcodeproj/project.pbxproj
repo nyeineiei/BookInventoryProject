@@ -18,6 +18,12 @@
 		44F7A0C82056F23B002EA774 /* WSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0C72056F23B002EA774 /* WSHelper.swift */; };
 		44F7A0CC2056F273002EA774 /* PSIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0CA2056F273002EA774 /* PSIDataModel.swift */; };
 		44F7A0CD2056F273002EA774 /* TemperatureDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0CB2056F273002EA774 /* TemperatureDataModel.swift */; };
+		44F7A0D22056F9E6002EA774 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0CF2056F9E6002EA774 /* RealmHelper.swift */; };
+		44F7A0D72056F9F8002EA774 /* BookListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0D52056F9F8002EA774 /* BookListCell.swift */; };
+		44F7A0D82056F9F8002EA774 /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F7A0D62056F9F8002EA774 /* BookListCell.xib */; };
+		44F7A0DB2056FA0E002EA774 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0DA2056FA0E002EA774 /* Helper.swift */; };
+		44F7A0DE2056FA36002EA774 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0DD2056FA35002EA774 /* Book.swift */; };
+		44F7A0E02056FA9B002EA774 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7A0DF2056FA9B002EA774 /* ThirdViewController.swift */; };
 		784F5F408A1C5060D84B4BD5 /* Pods_BookInventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE2894B5E5D2FCBB49E6BD4 /* Pods_BookInventory.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +64,12 @@
 		44F7A0C72056F23B002EA774 /* WSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHelper.swift; sourceTree = "<group>"; };
 		44F7A0CA2056F273002EA774 /* PSIDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSIDataModel.swift; sourceTree = "<group>"; };
 		44F7A0CB2056F273002EA774 /* TemperatureDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureDataModel.swift; sourceTree = "<group>"; };
+		44F7A0CF2056F9E6002EA774 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		44F7A0D52056F9F8002EA774 /* BookListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListCell.swift; sourceTree = "<group>"; };
+		44F7A0D62056F9F8002EA774 /* BookListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListCell.xib; sourceTree = "<group>"; };
+		44F7A0DA2056FA0E002EA774 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		44F7A0DD2056FA35002EA774 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		44F7A0DF2056FA9B002EA774 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FBE2894B5E5D2FCBB49E6BD4 /* Pods_BookInventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookInventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,12 +132,14 @@
 		4463944920557E4200E2666C /* BookInventory */ = {
 			isa = PBXGroup;
 			children = (
+				44F7A0DF2056FA9B002EA774 /* ThirdViewController.swift */,
+				44F7A0DC2056FA35002EA774 /* RealmModel */,
+				44F7A0D42056F9F8002EA774 /* Cells */,
 				44F7A0C92056F273002EA774 /* Model */,
 				44F7A0C52056F23B002EA774 /* Helper */,
 				4463944A20557E4200E2666C /* AppDelegate.swift */,
 				4463944C20557E4200E2666C /* FirstViewController.swift */,
 				4463944E20557E4200E2666C /* SecondViewController.swift */,
-				44728ABB2055893400FFE31E /* ThirdViewController.swift */,
 				4463945020557E4200E2666C /* Main.storyboard */,
 				4463945320557E4200E2666C /* Assets.xcassets */,
 				4463945520557E4200E2666C /* LaunchScreen.storyboard */,
@@ -155,6 +169,8 @@
 		44F7A0C52056F23B002EA774 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				44F7A0D92056FA0E002EA774 /* Helper */,
+				44F7A0CE2056F9E6002EA774 /* RealmHelper */,
 				44F7A0C62056F23B002EA774 /* WSHelper */,
 			);
 			path = Helper;
@@ -175,6 +191,39 @@
 				44F7A0CB2056F273002EA774 /* TemperatureDataModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		44F7A0CE2056F9E6002EA774 /* RealmHelper */ = {
+			isa = PBXGroup;
+			children = (
+				44F7A0CF2056F9E6002EA774 /* RealmHelper.swift */,
+			);
+			path = RealmHelper;
+			sourceTree = "<group>";
+		};
+		44F7A0D42056F9F8002EA774 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44F7A0D52056F9F8002EA774 /* BookListCell.swift */,
+				44F7A0D62056F9F8002EA774 /* BookListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44F7A0D92056FA0E002EA774 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				44F7A0DA2056FA0E002EA774 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		44F7A0DC2056FA35002EA774 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				44F7A0DD2056FA35002EA774 /* Book.swift */,
+			);
+			path = RealmModel;
 			sourceTree = "<group>";
 		};
 		B0A23BDACA9EABC778957421 /* Pods */ = {
@@ -296,7 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44728AB72055887A00FFE31E /* BookListCell.xib in Resources */,
+				44F7A0D82056F9F8002EA774 /* BookListCell.xib in Resources */,
 				4463945720557E4200E2666C /* LaunchScreen.storyboard in Resources */,
 				4463945420557E4200E2666C /* Assets.xcassets in Resources */,
 				4463945220557E4200E2666C /* Main.storyboard in Resources */,
@@ -390,9 +439,12 @@
 				44F7A0CC2056F273002EA774 /* PSIDataModel.swift in Sources */,
 				4463944F20557E4200E2666C /* SecondViewController.swift in Sources */,
 				4463944B20557E4200E2666C /* AppDelegate.swift in Sources */,
-				44728AB12055884000FFE31E /* RealmHelper.swift in Sources */,
-				44728AB62055887A00FFE31E /* BookListCell.swift in Sources */,
+				44F7A0D72056F9F8002EA774 /* BookListCell.swift in Sources */,
+				44F7A0DB2056FA0E002EA774 /* Helper.swift in Sources */,
+				44F7A0D22056F9E6002EA774 /* RealmHelper.swift in Sources */,
 				4463944D20557E4200E2666C /* FirstViewController.swift in Sources */,
+				44F7A0E02056FA9B002EA774 /* ThirdViewController.swift in Sources */,
+				44F7A0DE2056FA36002EA774 /* Book.swift in Sources */,
 				44F7A0C82056F23B002EA774 /* WSHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
