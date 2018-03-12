@@ -15,6 +15,15 @@
 		4463945720557E4200E2666C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4463945520557E4200E2666C /* LaunchScreen.storyboard */; };
 		4463946220557E4200E2666C /* BookInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4463946120557E4200E2666C /* BookInventoryTests.swift */; };
 		4463946D20557E4200E2666C /* BookInventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4463946C20557E4200E2666C /* BookInventoryUITests.swift */; };
+		44728AA62055862100FFE31E /* TemperatureDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AA52055862100FFE31E /* TemperatureDataModel.swift */; };
+		44728AA82055865A00FFE31E /* PSIDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AA72055865A00FFE31E /* PSIDataModel.swift */; };
+		44728AAC205586B300FFE31E /* WSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AAB205586B300FFE31E /* WSHelper.swift */; };
+		44728AB12055884000FFE31E /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AAE2055884000FFE31E /* RealmHelper.swift */; };
+		44728AB22055884000FFE31E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AB02055884000FFE31E /* Helper.swift */; };
+		44728AB62055887A00FFE31E /* BookListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AB42055887A00FFE31E /* BookListCell.swift */; };
+		44728AB72055887A00FFE31E /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44728AB52055887A00FFE31E /* BookListCell.xib */; };
+		44728ABA2055890700FFE31E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728AB92055890700FFE31E /* Book.swift */; };
+		44728ABC2055893400FFE31E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44728ABB2055893400FFE31E /* ThirdViewController.swift */; };
 		784F5F408A1C5060D84B4BD5 /* Pods_BookInventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE2894B5E5D2FCBB49E6BD4 /* Pods_BookInventory.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +61,15 @@
 		4463946820557E4200E2666C /* BookInventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookInventoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4463946C20557E4200E2666C /* BookInventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInventoryUITests.swift; sourceTree = "<group>"; };
 		4463946E20557E4200E2666C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44728AA52055862100FFE31E /* TemperatureDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDataModel.swift; sourceTree = "<group>"; };
+		44728AA72055865A00FFE31E /* PSIDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIDataModel.swift; sourceTree = "<group>"; };
+		44728AAB205586B300FFE31E /* WSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHelper.swift; sourceTree = "<group>"; };
+		44728AAE2055884000FFE31E /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		44728AB02055884000FFE31E /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		44728AB42055887A00FFE31E /* BookListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListCell.swift; sourceTree = "<group>"; };
+		44728AB52055887A00FFE31E /* BookListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListCell.xib; sourceTree = "<group>"; };
+		44728AB92055890700FFE31E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		44728ABB2055893400FFE31E /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FBE2894B5E5D2FCBB49E6BD4 /* Pods_BookInventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookInventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,9 +132,14 @@
 		4463944920557E4200E2666C /* BookInventory */ = {
 			isa = PBXGroup;
 			children = (
+				44728AB82055890700FFE31E /* RealmModel */,
+				44728AB32055887A00FFE31E /* Cells */,
+				44728AA92055869E00FFE31E /* Helper */,
+				44728AA4205584F600FFE31E /* Model */,
 				4463944A20557E4200E2666C /* AppDelegate.swift */,
 				4463944C20557E4200E2666C /* FirstViewController.swift */,
 				4463944E20557E4200E2666C /* SecondViewController.swift */,
+				44728ABB2055893400FFE31E /* ThirdViewController.swift */,
 				4463945020557E4200E2666C /* Main.storyboard */,
 				4463945320557E4200E2666C /* Assets.xcassets */,
 				4463945520557E4200E2666C /* LaunchScreen.storyboard */,
@@ -141,6 +164,66 @@
 				4463946E20557E4200E2666C /* Info.plist */,
 			);
 			path = BookInventoryUITests;
+			sourceTree = "<group>";
+		};
+		44728AA4205584F600FFE31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44728AA52055862100FFE31E /* TemperatureDataModel.swift */,
+				44728AA72055865A00FFE31E /* PSIDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44728AA92055869E00FFE31E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				44728AAF2055884000FFE31E /* Helper */,
+				44728AAD2055884000FFE31E /* RealmHelper */,
+				44728AAA2055869E00FFE31E /* WSHelper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		44728AAA2055869E00FFE31E /* WSHelper */ = {
+			isa = PBXGroup;
+			children = (
+				44728AAB205586B300FFE31E /* WSHelper.swift */,
+			);
+			path = WSHelper;
+			sourceTree = "<group>";
+		};
+		44728AAD2055884000FFE31E /* RealmHelper */ = {
+			isa = PBXGroup;
+			children = (
+				44728AAE2055884000FFE31E /* RealmHelper.swift */,
+			);
+			path = RealmHelper;
+			sourceTree = "<group>";
+		};
+		44728AAF2055884000FFE31E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				44728AB02055884000FFE31E /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		44728AB32055887A00FFE31E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44728AB42055887A00FFE31E /* BookListCell.swift */,
+				44728AB52055887A00FFE31E /* BookListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44728AB82055890700FFE31E /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				44728AB92055890700FFE31E /* Book.swift */,
+			);
+			path = RealmModel;
 			sourceTree = "<group>";
 		};
 		B0A23BDACA9EABC778957421 /* Pods */ = {
@@ -262,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44728AB72055887A00FFE31E /* BookListCell.xib in Resources */,
 				4463945720557E4200E2666C /* LaunchScreen.storyboard in Resources */,
 				4463945420557E4200E2666C /* Assets.xcassets in Resources */,
 				4463945220557E4200E2666C /* Main.storyboard in Resources */,
@@ -351,9 +435,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44728AA82055865A00FFE31E /* PSIDataModel.swift in Sources */,
+				44728AAC205586B300FFE31E /* WSHelper.swift in Sources */,
 				4463944F20557E4200E2666C /* SecondViewController.swift in Sources */,
 				4463944B20557E4200E2666C /* AppDelegate.swift in Sources */,
+				44728AB12055884000FFE31E /* RealmHelper.swift in Sources */,
+				44728AA62055862100FFE31E /* TemperatureDataModel.swift in Sources */,
+				44728AB62055887A00FFE31E /* BookListCell.swift in Sources */,
 				4463944D20557E4200E2666C /* FirstViewController.swift in Sources */,
+				44728ABC2055893400FFE31E /* ThirdViewController.swift in Sources */,
+				44728ABA2055890700FFE31E /* Book.swift in Sources */,
+				44728AB22055884000FFE31E /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

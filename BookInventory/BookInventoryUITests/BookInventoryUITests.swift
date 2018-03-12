@@ -2,7 +2,6 @@
 //  BookInventoryUITests.swift
 //  BookInventoryUITests
 //
-//  Created by Moe Han on 3/11/18.
 //  Copyright © 2018 NyeinEi. All rights reserved.
 //
 

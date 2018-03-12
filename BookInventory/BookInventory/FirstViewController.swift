@@ -2,7 +2,6 @@
 //  FirstViewController.swift
 //  BookInventory
 //
-//  Created by Moe Han on 3/11/18.
 //  Copyright © 2018 NyeinEi. All rights reserved.
 //
 
@@ -12,7 +11,19 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        WSHelper.sharedInstance.get24HrPSI { (responseObject) in
+            print(responseObject)
+        }
+        
+        WSHelper.sharedInstance.getPM25 { (responseObject) in
+            let myArr = [responseObject.east, responseObject.west, responseObject.central, responseObject.north, responseObject.south]
+            print(myArr)
+        }
+        
+        WSHelper.sharedInstance.get24HrWeatherForecast { (responseObject) in
+            print(responseObject)
+        }
     }
 
     override func didReceiveMemoryWarning() {
