@@ -13,10 +13,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var txtAuthor: UITextField!
     @IBOutlet weak var txtPublisher: UITextField!
     @IBOutlet weak var txtPublishDate: UITextField!
+    @IBOutlet weak var btnAdd: UIButton!
+    
+    let datePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        showDatePicker()
+        self.setupInterface()
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,4 +58,46 @@ class SecondViewController: UIViewController {
             return true
         }
     }
+    
+    func setupInterface() {
+        self.btnAdd.backgroundColor = .clear
+        self.btnAdd.layer.cornerRadius = 10
+        self.btnAdd.layer.borderWidth = 1
+        self.btnAdd.layer.borderColor = UIColor.black.cgColor
+    }
+    
+    func showDatePicker(){
+        //Formate Date
+        datePicker.datePickerMode = .date
+        
+        //ToolBar
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit()
+        
+        //done button & cancel button
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donedatePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelDatePicker))
+        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+        
+        // add toolbar to textField
+        txtPublishDate.inputAccessoryView = toolbar
+        // add datepicker to textField
+        txtPublishDate.inputView = datePicker
+    }
+    
+    @objc func donedatePicker(){
+        //For date formate
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy"
+        txtPublishDate.text = formatter.string(from: datePicker.date)
+        //dismiss date picker dialog
+        self.view.endEditing(true)
+    }
+    
+    @objc func cancelDatePicker(){
+        //cancel button dismiss datepicker dialog
+        self.view.endEditing(true)
+    }
+
 }

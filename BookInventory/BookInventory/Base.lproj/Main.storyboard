@@ -18,21 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to book inventory!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="33" y="318" width="310.5" height="31.5"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNw-me-J2a">
+                                <rect key="frame" x="0.0" y="-14.5" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Welcome to book inventory!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                        <rect key="frame" x="32" y="318" width="310.5" height="31.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="310.5" id="zR5-Y3-ya2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310.5" id="zR5-Y3-ya2"/>
+                                    <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="nNw-me-J2a" secondAttribute="centerX" id="Ehp-K3-ure"/>
+                                    <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerY" secondItem="nNw-me-J2a" secondAttribute="centerY" id="NOp-m4-eDe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="nNw-me-J2a" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="Ev3-Zo-bgc"/>
+                            <constraint firstItem="nNw-me-J2a" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="Jem-cA-mg2"/>
+                            <constraint firstItem="nNw-me-J2a" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="jpa-jG-OhL"/>
+                            <constraint firstItem="nNw-me-J2a" firstAttribute="centerY" secondItem="PQr-Ze-W5v" secondAttribute="centerY" id="riY-FD-BUi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -40,19 +51,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
         <!--BOOK LIST-->
         <scene sceneID="13z-zE-mOY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2mf-lq-LH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="sMp-an-coz" customClass="ThirdViewController" customModule="BookInventory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22w-9u-efU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl6-Ad-Vot">
-                                <rect key="frame" x="12" y="32" width="142" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl6-Ad-Vot">
+                                <rect key="frame" x="12" y="32" width="135" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="vUS-IU-QgK"/>
                                 </constraints>
@@ -82,6 +92,7 @@
                         <outlet property="tblBookList" destination="zxd-e0-45E" id="diD-gk-EPK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mf-lq-LH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="806.44677661169419"/>
         </scene>
@@ -166,15 +177,17 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHL-rf-RgN">
-                                        <rect key="frame" x="8" y="170" width="323" height="30"/>
+                                        <rect key="frame" x="8" y="170" width="323" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NL0-Tp-FxL"/>
+                                        </constraints>
                                         <state key="normal" title="ADD"/>
                                         <connections>
                                             <action selector="addBook:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6EQ-FL-ahR"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="4wF-Lz-7dH" firstAttribute="leading" secondItem="SKM-M3-QP0" secondAttribute="trailing" constant="12" id="7Pz-jn-Z8h"/>
                                     <constraint firstItem="AHL-rf-RgN" firstAttribute="top" secondItem="tVx-tq-T44" secondAttribute="bottom" constant="24" id="Ab1-43-KBm"/>
@@ -193,7 +206,6 @@
                                     <constraint firstItem="4wF-Lz-7dH" firstAttribute="centerY" secondItem="SKM-M3-QP0" secondAttribute="centerY" id="crT-fG-S5D"/>
                                     <constraint firstAttribute="trailing" secondItem="4wF-Lz-7dH" secondAttribute="trailing" constant="12" id="dpl-sr-dur"/>
                                     <constraint firstItem="Cdx-BH-5YN" firstAttribute="trailing" secondItem="4wF-Lz-7dH" secondAttribute="trailing" id="e0v-Pl-NzF"/>
-                                    <constraint firstAttribute="bottom" secondItem="AHL-rf-RgN" secondAttribute="bottom" constant="26" id="fZh-yV-J14"/>
                                     <constraint firstItem="dXV-t6-izz" firstAttribute="top" secondItem="cGh-yS-Yo6" secondAttribute="bottom" constant="12" id="g2h-Dm-Kop"/>
                                     <constraint firstItem="tVx-tq-T44" firstAttribute="trailing" secondItem="4dM-qs-0eG" secondAttribute="trailing" id="iv3-uW-Xoo"/>
                                     <constraint firstItem="4dM-qs-0eG" firstAttribute="centerY" secondItem="cGh-yS-Yo6" secondAttribute="centerY" id="ns4-pz-hww"/>
@@ -216,6 +228,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ADD A BOOK" image="icon-add" landscapeImage="icon-add" largeContentSizeImage="icon-add" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="btnAdd" destination="AHL-rf-RgN" id="oGd-6x-5KT"/>
                         <outlet property="txtAuthor" destination="Cdx-BH-5YN" id="iTi-6w-7G2"/>
                         <outlet property="txtPublishDate" destination="tVx-tq-T44" id="4c7-Y0-MMn"/>
                         <outlet property="txtPublisher" destination="4dM-qs-0eG" id="7ce-Bg-cU4"/>
